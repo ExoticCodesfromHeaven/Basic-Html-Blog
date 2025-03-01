@@ -1,2 +1,2 @@
-# Basic-Html-Blog
-Basic Blog created using basic HTML and Css
+# Basic HTML and CSS
+Basic startup web pages with HTML and CSS
