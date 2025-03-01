@@ -1,0 +1,9 @@
+Css styles are applied in the following order:
+
+4. Position: This checks the position of the style in the code e.g if color are defined for one element, the second one will be displayed in place of the first. The lower down the style, the more important it is.
+
+3. Specificity: This means that a style is applied based on the specificity in the code for instance if a li is specified using the tag name, class name, attribute, id. The style attached to the Id will be displayed first meaning that id has the highest level of specificity next to attribute, next to class before the tag name.
+
+2. Type: This means how the style is applied whether using internal, inline, external stylesheet. The most important is the inline next to the internal stylesheet and the last is the external.
+
+1. Importance: This is the most important and it is defined using a rule (!important);

@@ -1,0 +1,21 @@
+CSS SELECTORS
+Elements:
+elementName {
+
+Class:
+.className {
+
+id:
+#idName {
+
+Everything:
+* {
+
+adjacent selector:
+Element 1 + element 2 {
+
+Attribute selector:
+element[attribute] {
+
+nth of type selector:
+element:nth-of-type(n) {

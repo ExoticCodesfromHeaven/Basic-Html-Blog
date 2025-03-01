@@ -1,0 +1,11 @@
+CSS RESPONSIVE DESIGN
+
+Websites are responsive before you write any CSS except for image elements that do not adapt.
+
+Avoid fixed sizes in your code for instance instead of using height, use min-height so the container can expand when more space is needed, instead of doing width you do max-width and use margin-inline: auto; so when the page resizes it will automatically have a centralized margin.
+
+Don't declare styles you don't need like viewport units you don't need
+
+Use viewport units instead of fixed sizes
+
+Instead of using fixed sizes on grids use auto-fill or auto-fit depending on the project for example: grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 200px, 1fr)); where the min inside minmax means checking which size is the smallest depending on the situation.

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clamp() Responsive Page</title>
+    <style>
+        /* Reset default margins & paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Root font size for scaling */
+        html {
+            font-size: 16px;
+        }
+
+        /* Responsive navbar using clamp() */
+        nav {
+            background: navy;
+            color: white;
+            height: clamp(60px, 10vh, 100px); /* Min: 60px, Scales with viewport, Max: 100px */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 clamp(10px, 5vw, 50px); /* Min: 10px, Preferred: 5vw, Max: 50px */
+        }
+
+        .logo {
+            font-size: clamp(1.5rem, 2.5vw, 2.5rem); /* Min: 1.5rem, Scales, Max: 2.5rem */
+            font-weight: bold;
+            padding-left: 20px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: clamp(10px, 3vw, 30px); /* Adjusts spacing between links */
+            padding-right: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: clamp(1rem, 1.5vw, 1.3rem);
+        }
+
+        /* Hero Section */
+        .hero {
+            width: 100%;
+            height: 50vh;
+            background: linear-gradient(45deg, #ff7e5f, #feb47b);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: clamp(20px, 5vw, 50px);
+        }
+
+        .hero h1 {
+            font-size: clamp(2rem, 5vw, 4rem); /* Min: 2rem, Scales, Max: 4rem */
+        }
+
+        /* Responsive Content Section */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: clamp(20px, 4vw, 60px);
+            text-align: center;
+        }
+
+        /* Responsive Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: clamp(10px, 2vw, 20px);
+        }
+
+        .box {
+            background: lightblue;
+            padding: clamp(15px, 3vw, 30px);
+            border-radius: 10px;
+            font-size: clamp(1rem, 1.2vw, 1.5rem);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: clamp(15px, 2vh, 40px);
+            background: #222;
+            color: white;
+            font-size: clamp(1rem, 1.2vw, 1.3rem);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">MyLogo</div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Responsive Web Design with Clamp()</h1>
+    </section>
+
+    <!-- Content Section -->
+    <div class="container">
+        <h2>Flexible Grid Layout</h2>
+        <div class="grid">
+            <div class="box">Box 1</div>
+            <div class="box">Box 2</div>
+            <div class="box">Box 3</div>
+            <div class="box">Box 4</div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        &copy; 2025 Responsive Web. All rights reserved.
+    </footer>
+
+</body>
+</html>

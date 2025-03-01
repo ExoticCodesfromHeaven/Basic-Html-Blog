@@ -1,0 +1,15 @@
+/*body {
+	background-color: orange;
+}*/
+
+li {
+	border: 2px solid red;
+}
+
+#compulsory {
+	background-color: yellow;
+}
+
+.completed {
+	text-decoration: line-through;
+}

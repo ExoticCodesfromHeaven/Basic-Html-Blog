@@ -1,0 +1,16 @@
+p {
+	font-family: Arial;
+	line-height: 1.5;
+	text-align: left;
+}
+
+h1 {
+	font-family: Indie Flower;
+	font-size: 2em;
+	text-align: center;
+}
+
+span {
+	font-weight: bold;
+	text-decoration: underline;
+}

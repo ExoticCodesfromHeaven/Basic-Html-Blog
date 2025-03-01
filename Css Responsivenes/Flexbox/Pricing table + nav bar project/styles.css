@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'sigma-regular', 'sono';}
+
+.container {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100vw;
+    height: 10vh;
+    margin-inline: 0;
+    padding-inline: 10px;
+    margin-top: 0;
+    background-color: #ffa600;
+    color: rgba(0, 0, 0, 0);
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navBar {
+    display: inline-flex;
+    width: 100%;
+}
+
+div .logo {
+    align-self: flex-start;
+    color: #fff;
+    /* font-size: 1.5rem;
+    font-weight: bold; */
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    margin: 0;
+    border-radius: 25%;
+    background-color: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+    margin-left: 10px;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.nav-links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 3%;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #ffffffaf;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-inline: 5px;
+}
+
+.pricing-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    padding-inline: 20px;
+    margin-top: 0;
+    margin-bottom: 60px;
+  }
+
+  .plan {
+    text-align: center;
+    margin-bottom: 20px;
+    align-self: flex-start;
+    align-items: center;
+    margin-bottom: 0%;
+  }
+  h1 {
+    padding-top: 100px;
+    margin-bottom: 0;
+    position: relative;
+  }
+
+  .pricing-plan {
+    text-align: center;
+    background-color: whitesmoke;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1 0;
+  }
+
+  .plan-title {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .plan-price {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .plan-features {
+    list-style: none;
+    padding: 0;
+    padding: 0;
+  }
+
+  .plan-features li {
+    margin-bottom: 10px;
+  }
+
+  .plan-button {
+    background-color: rgb(255, 136, 0);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  .plan-button:hover {
+    background-color: rgb(255, 81, 0);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1);
+  }
+
+  @media (max-width: 1000px) {
+    .container {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: flex-start;
+        height: fit-content;
+        padding: 10px 0;
+        margin-bottom: 15%;
+    }
+    .pricing-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        height: 50vh;
+        padding-top: 10%;
+    }
+
+    .nav-links {
+        display: flex; /* Ensure it's always visible */
+        flex-direction: column; /* Stack links vertically */
+        align-items: flex-start; /* Center links */
+        width: 100%;
+        gap: 15px;
+        padding: 10px 0;
+    }
+
+    .nav-links a {
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+    h1.plan {
+        margin-top: 15vh; /* Ensures it is visible below the nav */
+        margin-bottom: 0;
+        font-weight: bolder;
+        font-size: 4rem;
+    }
+    .plan {
+        margin-bottom: 20px;
+        align-self: flex-start;
+        align-items: center;
+        margin-bottom: 15%;
+    }
+    p {
+        font-size: 2rem;
+        font-weight: 300;
+        font-style: italic;
+    }
+    .logo {
+        padding-left: 0;
+        box-sizing: border-box;
+    }
+}

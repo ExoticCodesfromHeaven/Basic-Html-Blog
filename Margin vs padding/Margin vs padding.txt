@@ -1,0 +1,1 @@
+Padding puts the element inside a sort of container and inside while margin puts space outside around the container and pushes other elements away.

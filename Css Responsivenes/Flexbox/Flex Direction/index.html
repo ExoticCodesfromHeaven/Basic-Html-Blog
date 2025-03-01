@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Direction</title>
+    <style>
+        .container {
+            display: flex;
+            flex-flow: row wrap; /* Uses flex-direction and flex-wrap properties */
+            border: 2px solid orange;
+            padding: 5px;
+            margin-inline: auto;
+            justify-content: flex-start;
+            align-content: flex-start;
+            gap: 10px 20px;
+        }
+
+        .box {
+            flex: 1 1 70px;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .red {
+            background-color: red;
+            width: 100%;
+            order: 0;
+        }
+
+        .blue {
+            background-color: blue;
+            width: 100%;
+            order: 4;
+        }
+
+        .green {
+            background-color: green;
+            width: 100%;
+            order: 3;
+        }
+
+        .yellow {
+            background-color: yellow;
+            width: 100%;
+            order: 2;
+        }
+        .orange {
+            background-color: orange;
+            width: 100%;
+            order: 1;
+        }
+        .violet {
+            background-color: violet;
+            width: 100%;
+            order: 6;
+        }
+        .indigo {
+            background-color: indigo;
+            width: 100%;
+            order: 5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="red box">Red</div>
+        <div class="blue box">Blue</div>
+        <div class="green box">Green</div>
+        <div class="yellow box">Yellow</div>
+        <div class="orange box">Orange</div>
+        <div class="violet box">Violet</div>
+        <div class="indigo box">Indigo</div>
+    </div>
+</body>
+</html>
